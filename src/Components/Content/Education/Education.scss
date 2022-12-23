@@ -1,0 +1,26 @@
+.active {
+  .education__item {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.education__item {
+  width: 90rem;
+  margin: 2rem auto 0;
+  background: #fafafa;
+  border-radius: 0.5rem;
+  display: flex;
+  overflow: hidden;
+  transform: translateY(-50px);
+  transition: all 0.8s ease;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
