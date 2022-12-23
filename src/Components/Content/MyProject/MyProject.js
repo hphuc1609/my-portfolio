@@ -112,7 +112,7 @@ function MyProject() {
           </div>
           <div className="project__card-item">
             <img src={Images.portfolio} alt="Portfolio Website" />
-            <a href="https://phucluu-porfolio.vercel.app/" className="project__card-name" target="_blank">
+            <a href="https://phucluu-portfolio.vercel.app/" className="project__card-name" target="_blank">
               My Portfolio
             </a>
           </div>
@@ -121,7 +121,7 @@ function MyProject() {
           className="secondary-button text-white hover:text-green-600 hover:border-current"
           onClick={() => getToLink("https://github.com/hphuc1609")}
         >
-          See more
+          View all
           <FaArrowRight className="project__icon duration-300 ease ml-4" />
         </button>
       </div>
