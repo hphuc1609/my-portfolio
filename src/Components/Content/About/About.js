@@ -21,6 +21,10 @@ function About() {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
+  const handleGoToResume = () => {
+    window.open("https://drive.google.com/file/d/1uzxT8zkenz8JNxatZiJeHXU4I38cy8dO/view?usp=share_link", "_blank");
+  };
+
   return (
     <section id="about" className={scrolled ? "about active bg-neutral-800" : "about bg-neutral-800"}>
       <div className="container m-auto pt-20 pb-32 px-6 overflow-hidden">
@@ -59,7 +63,7 @@ function About() {
                 </span>
               </div>
             </div>
-            <button className="primary-button button-about mt-12 bg-green-600">
+            <button className="primary-button button-about mt-12 bg-green-600" onClick={handleGoToResume}>
               Resume
               <GoChevronRight className="about__icon ml-1 duration-300 ease-in-out text-3xl" />
             </button>

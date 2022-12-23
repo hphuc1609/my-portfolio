@@ -3,7 +3,7 @@ import { FaChevronUp } from "react-icons/fa";
 
 function GoToTop() {
   const [scrolled, setSrolled] = useState(false);
-  const goToTop = document.querySelector("#go-to-top");
+  const goToTop = document.querySelector(".go-to-top");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -27,8 +27,11 @@ function GoToTop() {
 
   return (
     <button
-      id="go-to-top"
-      className="w-16 h-16 fixed text-2xl rounded-full right-8 bottom-32 duration-500 ease-in-out"
+      className={
+        scrolled
+          ? "go-to-top w-16 h-16 fixed text-2xl rounded-full right-8 bottom-32 duration-500 ease-in-out"
+          : "invisible w-16 h-16 fixed text-2xl rounded-full right-8 bottom-32 duration-500 ease-in-out"
+      }
       style={{ background: "#ffae00" }}
       onClick={handleGoToTop}
     >
